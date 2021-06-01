@@ -18,7 +18,7 @@ table{
 
     echo "<table border = 1 id='myTable'>";
         echo "<tr>
-            <th>Updated Date & Time</th>
+            <th> Last Updated Date & Time</th>
             <th>Country </th>
             <th>New Confirmed Cases</th>
             <th>Total Confirmed cases</th>
