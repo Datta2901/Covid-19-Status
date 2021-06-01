@@ -4,7 +4,7 @@ table{
     border-style:solid;
     border-width:2px;
     border-color:orange;
-    padding-right: 20%;
+    margin-left: 20%;
 }
 #myTable tr.header, #myTable tr:hover {
   background-color: yellow;
@@ -15,7 +15,7 @@ table{
     echo "<h1 style = 'color:red'>State wise Corona virus Status </h1>";
     $i=1;
 
-    echo "<input type = 'text' id='myInput' onkeyup='myFunction()' placeholder = 'Enter country to search' style = 'margin-left: 35%'>";
+    echo "<input type = 'text' id='myInput' onkeyup='myFunction()' placeholder = 'Enter State to search' style = 'margin-left: 45%'>";
     echo "<br>";
     echo "<br>";
     echo "<br>";
