@@ -34,15 +34,17 @@ table{
     $getdata= json_decode($data, true);
     $statescount = count($getdata['statewise']);
     while($i < $statescount){
-        echo "<tr>";
-        echo "<td>".$getdata['statewise'][$i]['lastupdatedtime'] . "</td>"  ;
-        echo "<td>".$getdata['statewise'][$i]['state'] . "</td>"  ;
-        echo "<td>".$getdata['statewise'][$i]['confirmed'] . "</td>"  ;
-        echo "<td>".$getdata['statewise'][$i]['active'] . "</td>"  ;
-        echo "<td>".$getdata['statewise'][$i]['recovered'] . "</td>"  ;
-        echo "<td>".$getdata['statewise'][$i]['deaths'] . "</td>" ; 
-        echo "</tr>";
-        $i++;
+        if($getdata['statewise'][$i]['state'] != "State Unassigned"){
+            echo "<tr>";
+            echo "<td>".$getdata['statewise'][$i]['lastupdatedtime'] . "</td>"  ;
+            echo "<td>".$getdata['statewise'][$i]['state'] . "</td>"  ;
+            echo "<td>".$getdata['statewise'][$i]['confirmed'] . "</td>"  ;
+            echo "<td>".$getdata['statewise'][$i]['active'] . "</td>"  ;
+            echo "<td>".$getdata['statewise'][$i]['recovered'] . "</td>"  ;
+            echo "<td>".$getdata['statewise'][$i]['deaths'] . "</td>" ; 
+            echo "</tr>";
+            $i++;
+        }
     }
     echo "</table>";
 ?>
