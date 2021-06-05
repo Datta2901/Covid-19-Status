@@ -3,7 +3,7 @@
     $getData = json_decode($data,true);
     $length = count($getData);
     $i=1;
-    print_r($getData);
+    // print_r($getData);
     foreach($getData as $key =>$value){
         if($key != "State Unassigned"){
     ?>
