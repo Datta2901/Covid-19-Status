@@ -24,6 +24,9 @@
         body{
             margin: 0px 0px 0px 0px;
         } 
+        .line{
+            width:25%
+        }
        
     </style>
 
@@ -64,11 +67,11 @@
     <h1>Measures</h1>
     <center>
         <img src = "./../images/Screenshot (208).png">
-        <hr>
+        <hr class = "line">
         <img src = "./../images/Screenshot (209).png">
-        <hr>
+        <hr class = "line">
         <img src = "./../images/Screenshot (210).png">
-        <hr>
+        <hr class = "line">
         <img src = "./../images/vaccine.jpg">
         <h1 style = "font:bold;color:red">'Only Way to fight against COVID-19 is to get Vaccinated!!!'</h1>
     </center>
