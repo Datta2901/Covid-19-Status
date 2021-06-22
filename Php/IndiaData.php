@@ -10,11 +10,57 @@ table{
   background-color: yellow;
 }
 </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        .navBar {
+            background-color: black;
+            height: 100px;
+        }     
+        .navBar a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-size: large;
+            padding: 10px;
+            position: relative;
+            top:30px;
+        } 
+        .navBar a:hover{
+            background-color: red;
+        }  
+        body{
+            margin: 0px 0px 0px 0px;
+        }  
+    </style>
+</head>
+
+<body>
+    
+    <center>
+        <!-- <h1>Home Page</h1> -->
+        <div class = "navBar">
+        <nav>
+            <a href = "./Home.php">Home</a>
+            <a href = "./WorldData.php">World Data</a>
+            <a href = "./IndiaData.php">India Data</a>
+            <a href = "./StateData.php">State Data</a>
+        </nav>
+        </div>
+    </center>
+    
+</body>
+</html>
+
 
 <?php
-    echo "<h1 style = 'color:red'>State wise Corona virus Status </h1>";
-    $i=1;
-
+    // set_time_limit(6000000000);
+    echo "<h1 style = 'color:red' align = center>State wise Corona virus Status </h1>";
     echo "<input type = 'text' id='myInput' onkeyup='myFunction()' placeholder = 'Enter State to search' style = 'margin-left: 45%'>";
     echo "<br>";
     echo "<br>";
@@ -29,22 +75,22 @@ table{
         <th>Recovered Cases</th>
         <th>No.of Deaths</th>
     </tr>";
-
     $data = file_get_contents('https://api.covid19india.org/data.json');// INDIA
-    $getdata= json_decode($data, true);
-    $statescount = count($getdata['statewise']);
-    while($i < $statescount){
-        if($getdata['statewise'][$i]['state'] != "State Unassigned"){
-            echo "<tr>";
-            echo "<td>".$getdata['statewise'][$i]['lastupdatedtime'] . "</td>"  ;
-            echo "<td>".$getdata['statewise'][$i]['state'] . "</td>"  ;
-            echo "<td>".$getdata['statewise'][$i]['confirmed'] . "</td>"  ;
-            echo "<td>".$getdata['statewise'][$i]['active'] . "</td>"  ;
-            echo "<td>".$getdata['statewise'][$i]['recovered'] . "</td>"  ;
-            echo "<td>".$getdata['statewise'][$i]['deaths'] . "</td>" ; 
-            echo "</tr>";
-            $i++;
-        }
+    // print_r($data);
+    $getResult= json_decode($data, true);
+    $length = count($getResult['statewise']);
+    // echo $length;
+    $i=1;
+    while($i < $length){
+      echo "<tr>";
+      echo "<td>".$getResult['statewise'][$i]['lastupdatedtime'] . "</td>"  ;
+      echo "<td>".$getResult['statewise'][$i]['state'] . "</td>"  ;
+      echo "<td>".$getResult['statewise'][$i]['confirmed'] . "</td>"  ;
+      echo "<td>".$getResult['statewise'][$i]['active'] . "</td>"  ;
+      echo "<td>".$getResult['statewise'][$i]['recovered'] . "</td>"  ;
+      echo "<td>".$getResult['statewise'][$i]['deaths'] . "</td>" ; 
+      echo "</tr>";
+      $i++;
     }
     echo "</table>";
 ?>

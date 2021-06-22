@@ -4,13 +4,65 @@ table{
     border-style:solid;
     border-width:2px;
     border-color:orange;
+    margin-left: 5%;
 }
 #myTable tr.header, #myTable tr:hover {
   background-color: yellow;
 }
 </style>
-<?php
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        .navBar {
+            background-color: black;
+            height: 100px;
+        }     
+        .navBar a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-size: large;
+            padding: 10px;
+            position: relative;
+            top:30px;
+        }  
+        .navBar a:hover{
+            background-color: red;
+        } 
+        body{
+            margin: 0px 0px 0px 0px;
+        }  
+    </style>
+</head>
+
+<body>
+    
+    <center>
+        <!-- <h1>Home Page</h1> -->
+        <div class = "navBar">
+        <nav>
+            <a href = "./Home.php">Home</a>
+            <a href = "./WorldData.php">World Data</a>
+            <a href = "./IndiaData.php">India Data</a>
+            <a href = "./StateData.php">State Data</a>
+        </nav>
+        </div>
+    </center>
+    
+</body>
+</html>
+
+<?php
+    set_time_limit(10);
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
     echo "<input type = 'text' id='myInput' onkeyup='myFunction()' placeholder = 'Enter country to search' style = 'margin-left: 35%'>";
     echo "<br>";
     echo "<br>";
