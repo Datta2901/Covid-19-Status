@@ -5,6 +5,9 @@ a{
     text-decoration-color:white;
     color:white;
 }
+a:hover{
+    background-color: red;
+}
 
 </style>
 
