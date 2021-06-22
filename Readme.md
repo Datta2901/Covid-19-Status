@@ -1,22 +1,22 @@
 ### Simple Corona virus status Website using covid api
 
 ### Features:
-### By using this website one can view the real time status of corona virus cases of 
+### By using this website one can view the real time status of corona virus cases of
 
-> World data(Individual Countries)
+> * World data(Individual Countries)
 > 
-> India data(Individual States)
+> * India data(Individual States)
 > 
->  State data(Individual Districts)
+>  * State data(Individual Districts)
 > 
-> We can see measures , symptoms of covid 19
+> * We can see measures , symptoms of covid 19
 
 # Used Laguages:
-> Html
+> * Html
 > 
-> php
+> *  php
 > 
-> css
+> * css
 
 # Different  Api 's:
 [world data](https://api.covid19api.com/summary)
