@@ -1,43 +1,13 @@
-<style>
-table{
-    border-style:solid;
-    border-width:2px;
-    border-color:orange;
-    margin-left: 30%;
-}
-#myTable tr.header, #myTable tr:hover {
-  background-color: yellow;
-}
-</style>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <style>
-        .navBar {
-            background-color: black;
-            height: 100px;
-        }     
-        .navBar a {
-            color: white;
-            text-decoration: none;
-            text-align: center;
-            font-size: large;
-            padding: 10px;
-            position: relative;
-            top:30px;
-        }   
-        .navBar a:hover{
-            background-color: red;
-        }
-        body{
-            margin: 0px 0px 0px 0px;
-        }  
-    </style>
+    <link rel="shortcut icon" type="image/jpg" href="./../images/Icon.jpg"/>
+    <link rel = "stylesheet" href="./../CSS/DistrictTable.css">
+    <link rel = "stylesheet" href = "./../CSS/Home.css">
+    <title>District Data</title>
 </head>
 
 <body>

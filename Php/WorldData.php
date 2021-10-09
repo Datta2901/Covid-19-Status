@@ -1,44 +1,15 @@
-<style>
-
-table{
-    border-style:solid;
-    border-width:2px;
-    border-color:orange;
-    margin-left: 5%;
-}
-#myTable tr.header, #myTable tr:hover {
-  background-color: yellow;
-}
-</style>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <style>
-        .navBar {
-            background-color: black;
-            height: 100px;
-        }     
-        .navBar a {
-            color: white;
-            text-decoration: none;
-            text-align: center;
-            font-size: large;
-            padding: 10px;
-            position: relative;
-            top:30px;
-        }  
-        .navBar a:hover{
-            background-color: red;
-        } 
-        body{
-            margin: 0px 0px 0px 0px;
-        }  
-    </style>
+    <link rel="shortcut icon" type="image/jpg" href="./../images/Icon.jpg"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel = "stylesheet" href = "./../CSS/worldData.css">
+    <link rel = "stylesheet" href = "./../CSS/Home.css">
+    <link rel = "stylesheet" href = "./../CSS/Search.css">
+    <title>World Data</title>
 </head>
 
 <body>
@@ -54,16 +25,27 @@ table{
         </nav>
         </div>
     </center>
-    
+    <br>
+    <h1 style = 'color:red' align = center>Country wise Corona virus Status </h1>
+    <!-- <input type = 'text' id='myInput' onkeyup='myFunction()' placeholder = 'Enter country  to search' style = 'margin-left: 35%'> -->
+    <center>
+    <div class="search-box">
+    <button class="btn-search">
+        <i class="fas fa-search">
+        </i>
+    </button>
+    <input type="text" class="input-search" id='myInput' onkeyup=myFunction() placeholder="Enter country name...">
+    </div>
+    </center>
+
+
 </body>
 </html>
 
 <?php
     set_time_limit(10);
     echo "<br>";
-    echo "<br>";
-    echo "<br>";
-    echo "<input type = 'text' id='myInput' onkeyup='myFunction()' placeholder = 'Enter country to search' style = 'margin-left: 35%'>";
+    // echo "<input type = 'text' id='myInput' onkeyup='myFunction()' placeholder = 'Enter country to search' style = 'margin-left: 35%'>";
     echo "<br>";
     echo "<br>";
     echo "<br>";

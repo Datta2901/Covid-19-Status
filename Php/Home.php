@@ -1,38 +1,9 @@
 <html>
-    <style>
-        .navBar {
-            background-color: black;
-            height: 100px;
-        }     
-        .navBar a {
-            color: white;
-            text-decoration: none;
-            text-align: center;
-            font-size: large;
-            padding: 10px;
-            position: relative;
-            top:30px;
-        }
-        .navBar a:hover{
-            background-color: red;
-        }
-        .image{
-           width:100%;
-           height: 87%;
-        }
-
-        body{
-            margin: 0px 0px 0px 0px;
-        } 
-        .line{
-            width:25%
-        }
-       
-    </style>
-
+<link rel="shortcut icon" type="image/jpg" href="./../images/Icon.jpg"/>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href = "./../CSS/Home.css">
 
 <body>
-    
     <center>
         <!-- <h1>Home Page</h1> -->
         <div class = "navBar">
@@ -46,8 +17,18 @@
         </nav>
         </div>
     </center>
-    <img src = "./../images/bg.jpeg" class = "image">
-   
+    <div class = "container">
+        <img src = "./../images/bg.jpeg" class = "image">
+        <button class = "VaccinePortal">
+        <i class='fas fa-syringe' style='font-size:36px'></i>
+            <a href = "https://www.cowin.gov.in/" target="_blank">Cowin
+        </button>
+        </a>
+        <button class = "NearBy">
+        <i class='fas fa-hospital-symbol' style='font-size:36px'></i>
+            <a href = "https://www.google.com/maps/search/hospital+near+me/" target="_blank">Near by Hospitals
+        </button></a>
+    </div>
 
 <div id = "symptoms">
     <h1>Symptoms</h1>
@@ -76,6 +57,14 @@
         <h1 style = "font:bold;color:red">'Only Way to fight against COVID-19 is to get Vaccinated!!!'</h1>
     </center>
 </div>
+<center>
+<div style="width: 100%" class = "Map">
+<div style="width: 100%"><iframe width="1299" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=+(Hospitals%20Nearby)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+</iframe>
+</div>
+</div>
+</center>
+
 </body>
 </html>
 

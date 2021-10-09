@@ -1,43 +1,15 @@
-<style>
-
-table{
-    border-style:solid;
-    border-width:2px;
-    border-color:orange;
-    margin-left: 20%;
-}
-#myTable tr.header, #myTable tr:hover {
-  background-color: yellow;
-}
-</style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <style>
-        .navBar {
-            background-color: black;
-            height: 100px;
-        }     
-        .navBar a {
-            color: white;
-            text-decoration: none;
-            text-align: center;
-            font-size: large;
-            padding: 10px;
-            position: relative;
-            top:30px;
-        } 
-        .navBar a:hover{
-            background-color: red;
-        }  
-        body{
-            margin: 0px 0px 0px 0px;
-        }  
-    </style>
+    <link rel="shortcut icon" type="image/jpg" href="./../images/Icon.jpg"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel = "stylesheet" href = "./../CSS/Search.css">
+    <link rel="stylesheet" href = "./../CSS/IndiaData.css">
+    <link rel="stylesheet" href = "./../CSS/Home.css">
+    <title>India Data</title>
 </head>
 
 <body>
@@ -53,6 +25,19 @@ table{
         </nav>
         </div>
     </center>
+    <br>
+    <h1 style = 'color:red' align = center>State wise Corona virus Status </h1>
+    <br>
+        <center>
+        <div class="search-box" >
+        <button class="btn-search">
+            <i class="fas fa-search">
+            </i>
+        </button>
+        <input type="text" class="input-search" id='myInput' onkeyup=myFunction() placeholder="Enter country name...">    
+        </div>
+        </center>
+
     
 </body>
 </html>
@@ -60,12 +45,10 @@ table{
 
 <?php
     // set_time_limit(6000000000);
-    echo "<h1 style = 'color:red' align = center>State wise Corona virus Status </h1>";
-    echo "<input type = 'text' id='myInput' onkeyup='myFunction()' placeholder = 'Enter State to search' style = 'margin-left: 45%'>";
+    // echo "<h1 style = 'color:red' align = center>State wise Corona virus Status </h1>";
+    // echo "<input type = 'text' id='myInput' onkeyup='myFunction()' placeholder = 'Enter State to search' style = 'margin-left: 45%'>";
     echo "<br>";
     echo "<br>";
-    echo "<br>";
-
     echo "<table border 1 id = 'myTable'>";
     echo "<tr>
         <th>Last Updated Date & Time</th>
