@@ -36,12 +36,20 @@ District data
 # Sample Front End :
 
 ## Home Page
-![Image](images/HomePage.png)
+![Image](./Output/Home.png)
 
 ## World Data Page:
-![Image](images/World%20Data.png)
+![Image](./Output/World%20Data.png)
+## India Data Page:
+![Image](./Output/India.png)
 ## State Data Page:
-![Image](images/State%20Data.png)
+![Image](./Output/State%20Data.png)
 
 ## District/Union Territory Data Page:
-![Image](images/DistrictData.png)
+![Image](./Output/District.png)
+## Covid 19 predictor home page:
+![Image](./Output/covid%20home%202.png)
+## Covid positive result page:
+![Image](./Output/Covid%20+ve%20Result.png)
+## Covid negative result page:
+![Image](./Output/Covid%20-ve%20result.png)
