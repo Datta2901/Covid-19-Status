@@ -14,6 +14,7 @@
             <a href = "./StateData.php">State Data</a>
             <a href = "#Measures">Measures</a>
             <a href = "#symptoms">Symptoms</a>
+            <a href = "https://covid-19-symptom-predictor.herokuapp.com/">Symptom Predictor</a>
         </nav>
         </div>
     </center>
