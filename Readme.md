@@ -23,13 +23,13 @@ Link : https://covid-19-data-status.herokuapp.com/
 > * css
 
 # Different  Api 's:
-[world data](https://api.covid19api.com/summary)
+world data
 > https://api.covid19api.com/summary
 
-[State data](https://api.covid19india.org/data.json)
+State data
 > https://api.covid19india.org/data.json
 > 
-[District data](https://api.covid19india.org/state_district_wise.json)
+District data
 > https://api.covid19india.org/state_district_wise.json
 
 
