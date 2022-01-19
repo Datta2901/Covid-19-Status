@@ -3,6 +3,9 @@
 ### Website Link
 Link : https://covid-19-data-status.herokuapp.com/
 
+Covid - 19 Symptom Predictor : 
+github :  https://github.com/Datta2901/Covid_19_Symptom_Predictor
+
 
 ### Features:
 ### By using this website one can view the real time status of corona virus cases of
